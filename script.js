@@ -2,7 +2,7 @@
 const timeClock = () => {
     const DateTime = luxon.DateTime;
     const now = DateTime.now();
-    document.getElementById('output').textContent = "Current Date: " + now.toFormat('yyyy LLL dd');
+    document.getElementById('output').textContent = "Current Date: " + now.toFormat('cccc, yyyy LLL dd');
     document.getElementById('hours').textContent = now.toFormat('hh');
     document.getElementById('minutes').textContent = now.toFormat('mm');
     document.getElementById('seconds').textContent = now.toFormat('ss');
